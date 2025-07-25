@@ -20,8 +20,8 @@ public class LongestSubstring {
             Character c = str.charAt(right);
             int lastSeen = seen.getOrDefault(c, -1);
             if (lastSeen >= left) {
-                maxLen = Math.max(maxLen, (right - 1) - left);
-                left = lastSeen;
+                maxLen = Math.max(maxLen, right - left);
+                left = lastSeen + 1;
             }
             seen.put(c, right);
         }

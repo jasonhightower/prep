@@ -17,7 +17,7 @@ public class TwoSumUnordered implements TwoSum {
             final int num = numbers[i];
             final int pair = target - num;
             if (indexes.containsKey(pair)) {
-                return Optional.of(new int[]{i, indexes.get(pair)});
+                return Optional.of(new int[]{indexes.get(pair), i});
             }
             indexes.put(num, i);
         }

@@ -35,7 +35,7 @@
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.2.0</version>
+        <version>5.11.0</version>
         <scope>test</scope>
     </dependency>
   </dependencies>
@@ -54,7 +54,7 @@
 	      <dependency>
 		  <groupId>org.junit.jupiter</groupId>
 		  <artifactId>junit-jupiter-engine</artifactId>
-		  <version>5.2.0</version>
+		  <version>5.11.0</version>
 	      </dependency>
            </dependencies>
            <configuration>

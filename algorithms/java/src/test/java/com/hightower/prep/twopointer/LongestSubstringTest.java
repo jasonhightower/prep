@@ -16,23 +16,23 @@ public class LongestSubstringTest {
 
     @Test
     public void testLongestAtStart() {
-        String testString = "qwertyuwasdfret";
+        String testString = "qwertyuwrasrdfretr";
         int result = this.classUnderTest.find(testString);
-        assertEquals(result, 7);
+        assertEquals(7, result);
     }
 
     @Test
     public void testLongestInMiddle() {
         String testString = "abcrewqrtyuiop";
         int result = this.classUnderTest.find(testString);
-        assertEquals(result, 10);
+        assertEquals(10, result);
     }
 
     @Test
     public void testLongestAtEnd() {
         String testString = "aaaaabcrewqaaaa";
         int result = this.classUnderTest.find(testString);
-        assertEquals(result, 7);
+        assertEquals(7, result);
     }
 
     @Test
@@ -46,7 +46,22 @@ public class LongestSubstringTest {
     public void testCompletelyRepeatingString() {
         String testString = "aaaaaaaaaaa";
         int result = this.classUnderTest.find(testString);
-        assertEquals(result, 1);
+        assertEquals(1,result);
+    }
+
+    @Test
+    public void testLeetCode1() {
+        assertEquals(3, this.classUnderTest.find("abcabcbb"));
+    }
+
+    @Test
+    public void testLeetCode2() {
+        assertEquals(1, this.classUnderTest.find("bbbbbbbbb"));
+    }
+
+    @Test
+    public void testLeetCode3() {
+        assertEquals(3, this.classUnderTest.find("pwwkew"));
     }
 
 }

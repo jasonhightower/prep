@@ -20,12 +20,12 @@ public class TwoSumUnorderedTest {
     public void testUnsorted() {
         int[] numbers = {11,7,2,15};
         int target = 17;
-        
+
         Optional<int[]> resultOpt = this.twoSum.find(numbers, target);
         assertAll("result",
             () -> assertTrue(resultOpt.isPresent()),
-            () -> assertEquals(resultOpt.get()[0], 2),
-            () -> assertEquals(resultOpt.get()[1], 3));
+            () -> assertEquals(2, resultOpt.get()[0]),
+            () -> assertEquals(3, resultOpt.get()[1]));
     }
 
 
