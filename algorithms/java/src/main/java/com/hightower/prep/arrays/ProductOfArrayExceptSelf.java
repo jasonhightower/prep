@@ -22,7 +22,7 @@ public class ProductOfArrayExceptSelf {
      * @return
      */
     public int[] calculate(int[] nums) {
-        int result[] = new int[nums.length];
+        int[] result = new int[nums.length];
         Arrays.fill(result, 1);
         int prefix = 1;
         for (int i = 0; i < nums.length; i++) {
