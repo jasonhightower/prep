@@ -31,7 +31,7 @@ public class DepthFirstSearchTest {
 
     @Test
     void testDepthFirstSearchComplex()  {
-        List<TreeNode<Integer>> nodes = createTreeNodes(9);
+        List<TreeNode<Integer>> nodes = TreeHelper.createTreeNodes(9);
         nodes.get(0).setLeft(nodes.get(1));
         nodes.get(0).setRight(nodes.get(2));
         nodes.get(1).setLeft(nodes.get(3));
@@ -45,12 +45,5 @@ public class DepthFirstSearchTest {
         assertEquals(nodes.get(6), node);
     }
 
-    private List<TreeNode<Integer>> createTreeNodes(int num) {
-        List<TreeNode<Integer>> nodes = new ArrayList<>();
-        for (int i = 0; i < num; i++) {
-            nodes.add(new TreeNode<>(i+1));
-        }
-        return nodes;
-    }
 
 }

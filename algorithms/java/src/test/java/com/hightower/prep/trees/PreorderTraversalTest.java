@@ -36,7 +36,7 @@ public class PreorderTraversalTest {
     @ParameterizedTest
     @MethodSource("provideTraversalImplementations")
     void testInorderTraversalComplex(final Traversal classUnderTest)  {
-        List<TreeNode<Integer>> nodes = createTreeNodes(9);
+        List<TreeNode<Integer>> nodes = TreeHelper.createTreeNodes(9);
         nodes.get(0).setLeft(nodes.get(1));
         nodes.get(0).setRight(nodes.get(2));
         nodes.get(1).setLeft(nodes.get(3));
@@ -56,14 +56,6 @@ public class PreorderTraversalTest {
         List<Integer> results = classUnderTest.traverse(null);
         assertArrayEquals(new Integer[] {},
                 results.toArray(new Integer[0]));
-    }
-
-    private List<TreeNode<Integer>> createTreeNodes(int num) {
-        List<TreeNode<Integer>> nodes = new ArrayList<>();
-        for (int i = 0; i < num; i++) {
-            nodes.add(new TreeNode<>(i+1));
-        }
-        return nodes;
     }
 
 }
