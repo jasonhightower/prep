@@ -38,21 +38,21 @@ public class ReverseWordsInAStringTest {
     @Test
     public void testReverseWordsManually() {
         assertEquals("blue is sky the",
-                this.classUnderTest.reverseWordsManually("the sky is blue")
+                this.classUnderTest.reverseWords("the sky is blue")
         );
     }
 
     @Test
     public void testManuallyWithExtraSpaces() {
         assertEquals("world hello",
-                this.classUnderTest.reverseWordsManually("  hello world  ")
+                this.classUnderTest.reverseWords("  hello world  ")
         );
     }
 
     @Test
     public void testManuallyWithTab() {
         assertEquals("example good a",
-                this.classUnderTest.reverseWordsManually("a good    example")
+                this.classUnderTest.reverseWords("a good    example")
         );
     }
 

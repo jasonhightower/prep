@@ -8,13 +8,13 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class ExpandOptionalRegexTest {
+public class ExpandOptionalRegexRecursiveTest {
 
-    private ExpandOptionalRegexIterative classUnderTest;
+    private ExpandOptionalRegexRecursive classUnderTest;
 
     @BeforeEach
     public void setUp() {
-        this.classUnderTest = new ExpandOptionalRegexIterative();
+        this.classUnderTest = new ExpandOptionalRegexRecursive();
     }
 
     @Test

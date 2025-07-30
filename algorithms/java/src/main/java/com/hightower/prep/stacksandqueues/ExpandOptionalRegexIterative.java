@@ -8,7 +8,7 @@ import java.util.Stack;
  * Given a regular expression like "A?BC?D" where ? delineates 0 or 1
  * occurrence of the previous character return all the combinations of the string.
  */
-public class ExpandOptionalRegex {
+public class ExpandOptionalRegexIterative {
 
     public List<String> expand(String input) {
         Stack<Partial> partials = new Stack<>();

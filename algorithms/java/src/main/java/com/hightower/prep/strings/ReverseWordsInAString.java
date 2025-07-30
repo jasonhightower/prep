@@ -1,32 +1,28 @@
 package com.hightower.prep.strings;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class ReverseWordsInAString {
 
     public String reverseWords(String input) {
-        List<String> words = Arrays.asList(input.split("\\s"));
-        Collections.reverse(words);
-        return words.stream()
-                .map(String::strip)
-                .filter(s -> !s.isEmpty())
-                .collect(Collectors.joining(" "));
-    }
-
-    public String reverseWordsManually(String input) {
+        int left = input.length();
+        int right = left;
         StringBuilder builder = new StringBuilder();
-        String[] words = input.split("\\s");
-        for (int i = words.length - 1; i >= 0; i--) {
-            String word = words[i].strip();
-            if (!word.isEmpty()) {
-                if (builder.length() > 0) {
-                    builder.append(" ");
-                }
-                builder.append(word);
+        while (left >= 0) {
+            while (right - 1 >= 0 && input.charAt(right - 1) == ' ') {
+                right--;
             }
+            if (right == 0) {
+                break;
+            }
+            left = right;
+            while (left - 1 >= 0 && input.charAt(left - 1) != ' ') {
+                left--;
+            }
+            if (builder.length() != 0) {
+                builder.append(' ');
+            }
+            builder.append(input, left, right);
+            left--;
+            right = left;
         }
         return builder.toString();
     }
