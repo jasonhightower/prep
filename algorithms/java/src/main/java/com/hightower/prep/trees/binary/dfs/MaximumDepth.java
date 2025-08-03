@@ -1,4 +1,6 @@
-package com.hightower.prep.trees;
+package com.hightower.prep.trees.binary.dfs;
+
+import com.hightower.prep.trees.binary.TreeNode;
 
 public class MaximumDepth {
 

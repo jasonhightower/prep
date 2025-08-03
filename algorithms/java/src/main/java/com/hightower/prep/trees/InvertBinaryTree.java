@@ -1,5 +1,7 @@
 package com.hightower.prep.trees;
 
+import com.hightower.prep.trees.binary.TreeNode;
+
 public class InvertBinaryTree {
 
     public <T> TreeNode<T> invert(TreeNode<T> root) {

@@ -1,9 +1,8 @@
 package com.hightower.prep.trees;
 
+import com.hightower.prep.trees.binary.TreeNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,5 +1,7 @@
 package com.hightower.prep.trees;
 
+import com.hightower.prep.trees.binary.TreeNode;
+
 public class DepthFirstSearch {
 
     public <T> TreeNode<T> find(T target, TreeNode<T> root) {

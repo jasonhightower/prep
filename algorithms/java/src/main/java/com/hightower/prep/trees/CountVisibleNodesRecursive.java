@@ -1,5 +1,7 @@
 package com.hightower.prep.trees;
 
+import com.hightower.prep.trees.binary.TreeNode;
+
 public class CountVisibleNodesRecursive<T extends Comparable<T>> implements Aggregator<T, Integer> {
 
     public Integer aggregate(final TreeNode<T> root) {

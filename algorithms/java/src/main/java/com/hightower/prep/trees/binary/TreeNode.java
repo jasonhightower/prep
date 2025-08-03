@@ -1,4 +1,4 @@
-package com.hightower.prep.trees;
+package com.hightower.prep.trees.binary;
 
 public class TreeNode<T> {
 

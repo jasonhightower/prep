@@ -1,5 +1,7 @@
 package com.hightower.prep.trees;
 
+import com.hightower.prep.trees.binary.TreeNode;
+
 import java.util.Stack;
 
 public class CountVisibleNodesIterative<T extends Comparable<T>> implements Aggregator<T, Integer> {

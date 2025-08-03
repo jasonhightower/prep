@@ -1,5 +1,7 @@
 package com.hightower.prep.trees;
 
+import com.hightower.prep.trees.binary.TreeNode;
+
 public class SubtreeCheck {
 
     public <T> boolean isSubtree(TreeNode<T> root, TreeNode<T> subtree) {
